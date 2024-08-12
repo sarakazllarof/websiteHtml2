@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> berat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://3.bp.blogspot.com/-AO-gZIWjNDI/ToLZvfHw6ZI/AAAAAAAAAF0/wPWAYdgqoRI/s1600/Berati+-+houses+in+Mangalem.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+#search i{
+  padding: 5px;
+  background-color: rgba(133, 99, 85, 0.75);
+  margin: 5px;
+  border-radius: 50%;
+  color: white;
+}
+#back-btn{
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding" style="background-color: #6b3e33;">
+    
+    <div class="w3-col s3" id="back-btn">
+      <a href="index.html" class="w3-button w3-block">Go back to home <i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    </div>
+      
+  
+
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    
+  </div>
+  
+</header>
+
+
+    <div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Products from Kruja</span></h1>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)"  onclick="openMenu(event, 'Best Selling Products');" id="myLink">
+        <div class="w3-col s6 tablink" >Products from this city</div>
+      </a>
+     
+    </div>
+
+
+    <div id="Best Selling Products" class="w3-container menu w3-padding-48 w3-card">
+      <h5 style="text-align:center;"><strong>Handmade vase</strong></h5>
+      <img src="vazo.png" width="200px" style="align-items: center;">
+      <p style="text-align:center;" class="w3-text-black">Price: €69.90 </p><br>
+    
+      <h5 style="text-align:center"><strong>Handmade bag</strong></h5>
+      <img src="cantk.png" width="200px">
+      <p style="text-align:center;" class="w3-text-black" > Price: €29.90 </p><br>
+    
+      <h5><strong>Handmade clothing</strong></h5>
+      <img src="veshje.png" width="200px">
+      <p style="text-align:center;" class="w3-text-black" > Price: €99.90 </p><br>
+    
+      
+    </div>
+    
+    
+      
+    </div>
+
+    
+    </div>  
+    
+  </div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+</body>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</html>

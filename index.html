@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("1.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+#search i{
+  padding: 5px;
+  background-color: rgba(133, 99, 85, 0.75);
+  margin: 5px;
+  border-radius: 50%;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding" style="background-color: #532a0f;">
+    
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block" style="background-color:#532a0f  ; color:whitesmoke;">ABOUT <i class="fa fa-info-circle" aria-hidden="true"></i></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block" style="background-color: #532a0f; color:whitesmoke;">MENU <i class="fa fa-bars" aria-hidden="true"></i></a>
+    </div>
+     <div class="w3-col s3">
+      <a href="#order" class="w3-button w3-block" style="background-color: #532a0f; color:whitesmoke;">ORDER <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    </div>
+    
+      <div class="w3-col s3" id="search">
+        <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search.." name="search" >
+      </div>
+        
+      
+  
+
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-brown" style="font-size:200px; font-family: Brush Script MT;">DuarArt'<br></span>
+    <span class="w3-text-brown" style="font-size:30px; font-family: Times New Roman, monospace" > we put art in craft</p>
+  </div>3
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h1 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="background-color: #532a0f;">ABOUT OUR BUSINESS</span></h1>
+    <p style="font-family: Times New Roman;">Since hand-made products have become very trendy, moreover, they are also eco-friendly, we think that this part will also serve as a message to convey. The products that are offered are made by women from every city of Albania, as some deep areas due to the impossibility, give a good hand in the economy, or many women who are part of different associations/organizations because they know how to make such products. The business will be supported by various non-profit organizations that deal with women's rights in Albania and do not have employment opportunities.</p>
+    <p style="font-family: Times New Roman;"> The message is to give a different opportunity to people, especially women, who cannot live a normal life because of conditions that do not favor them and introduce the concept of environmental protection, because hand-made products are also made in such a way with products that are recycled and are eco-friendly. We also have the concept of reusable materials because these products are created under artisanal conditions and to reach for a good result, many things must be combined at the same time, and thus it is not necessarily useful to use things that are consumed for such time.</p>
+ 
+    
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="background-color: #532a0f">THE MENU</span></h1>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Best Selling Products');" id="myLink">
+        <div class="w3-col s6 tablink">Best Selling Products</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cities to shop from');">
+        <div class="w3-col s6 tablink">Cities to shop from</div>
+      </a>
+    </div>
+
+
+    <div id="Best Selling Products" class="w3-container menu w3-padding-48 w3-card">
+      <h><strong> Handmade Earrings</strong></h5>
+      <img src="vathe.png" width="200px">
+      <p style="text-align:left;" class="w3-text-black" ><i>Artisan Crafted Earrings with Sterling Silver and Gold Plate
+These earrings that captivate with both, a sense of contrast and of equilibrium. Featuring hammered textured, the layered earrings are crafted by hand with 24k gold plated brass, oxidized and matte sterling silver. </i><br> Price: €29.90 </p><br>
+    
+      <h5><strong>Handmade Bag</strong></h5>
+      <img src="canta.png" width="200px">
+      <p style="text-align:left;" class="w3-text-black" ><i>Cotton Blend Tote Bag.Woven with an eye-catching patchwork motif, this bag is one accessory you won't mind toting around. Handcrafted from a cotton-nylon blend, the bag features a geometric motif, leather and cotton shoulder straps, and a zippered closure. </i><br> Price: €14.90 </p><br>
+    
+      <h5><strong>Handmade Carpet</strong></h5>
+      <img src="qilim.png" width="200px">
+      <p style="text-align:left;" class="w3-text-black" ><i>Handwoven Multicolor Wool Rug 
+The dazzling rugs are woven by hand on a traditional loom and takes its beautiful hues from natural dye. </i><br> Price: €39.90 </p><br>
+    
+      <h5><strong>Handmade Bracelet</strong></h5>
+      <img src="bracelet.png" width="200px">
+      <p style="text-align:left;" class="w3-text-black" ><i> Colorful Bracelet from Polypropylene Cords
+Colorful  bracelets for both women and men, hand-woven from sturdy polypropylene cords. The bracelets close with brass snaps . </i><br> Price: €4.90 </p><br>
+
+      <h5><strong>Handmade Bowl</strong></h5>
+      <img src="pjata.png" width="200px">
+      <p style="text-align:left;" class="w3-text-black" ><i>Hand-Painted Ceramic bowl
+Crafted from ceramic in the shape of a bowl, this bowl is perfect for simple decor or for display. </i><br> Price: €14.90 </p><br>
+    </div>
+    <div id="Cities to shop from" class="w3-container menu w3-padding-48 w3-card">
+      <p style="color: red"> <i>If you are interested in Albania's cities' cultural aspect such as traditions or handcrafts, choose any city that you like and watch every handmade product it offers!</i></p>
+      <h5><strong> Berat </strong></h5>
+      <a href = "berat.html"> <img src="berat.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Berat is the ninth most populous city of Albania and the seat of Berat County and Berat Municipality.  Berat is located in the south of the country. It is surrounded by mountains and hills, including Tomorr on the east that was declared a national park. 
+Berat, designated a UNESCO World Heritage Site in 2008, comprises a unique style of architecture with influences from several civilizations that have managed to coexist for centuries throughout the history, Berat is one of the main cultural centres of the country.
+Popular artisan products: works of stone, wood, iconography, carpets and thatched works.  </i><br>  </p><br>
+    
+      <h5><strong> Kruja </strong></h5>
+      <a href = "kruja.html"> <img src="kruja.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Krujë is a town and a municipality in north central Albania. Located between Mount Krujë and the Ishëm River, the city is only 20 km north from the capital of Albania, Tirana. Krujë was inhabited by the ancient Illyrian tribe of the Albani.
+he museums of Krujë include the Skanderbeg Museum, located in the environs of the Krujë Castle, and the national ethnographic museum. The name of the city is related to the Albanian word kroi, krua, meaning "fountain" or “water source”. 
+Popular artisan products: brass trays, antique musical instruments, traditional clothing.
+ </i><br>  </p><br>
+    
+      <h5><strong> Tropoja </strong></h5>
+      <a href = "tropoj.html"> <img src="tropoja.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Tropojë is a municipality and town in Kukës County, northeastern Albania, within the historical ethnographic region of the Gjakova Highlands.  Tropojë's old name was Trebopolje and is recorded in Serbian medieval charters and Ottoman registers. The word itself comes from the old Slavic trebiti, ‘to clean’, and polje, ‘field’, i.e. ‘clean field’.
+Tropojë used to be more commonly known as Malësia e Gjakoves. The region was inhabited by Illyrian tribes. Archaeological evidence found in the area, such as castles or tumuli show that the area was populated since the ancient time. The region lies in the geographical span of the Dardani tribes.
+Popular artisan products: handmade carpets, clay bowls, handmade clothing. </i><br>  </p><br>
+
+      <h5><strong> Korça </strong></h5>
+      <a href = "korca.html"> <img src="korc.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Korçë (pronounced [ˈkɔɾtʃə]; definite Albanian form: Korça) is the eighth most populous city of the Republic of Albania and the seat of Korçë County and Korçë Municipality
+The area of the Old Bazaar, including Mirahori Mosque, is considered as the urban core of the city. Founded by a local Ottoman Albanian lord, Ilias Bey Mirahori, the urban area of Korçë dates back to the late 15th century and the beginning of the 16th century, however its actual physiognomy was realized in the 19th century, during a period that corresponds with the rapid growth and development of the city. The Old Bazaar has played a dominant role in Albania's market history. Korçë is the largest city of eastern Albania and an important cultural and industrial centre.  </i><br>  </p><br>
+
+      <h5><strong> Shkodra </strong></h5>
+      <a href = "shkodra.html"> <img src="shkoder.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Shkodër  is the fifth-most-populous city of the Republic of Albania and the seat of Shkodër County and Shkodër Municipality. The city sprawls across the Plain of Mbishkodra between the southern part of Lake Shkodër and the foothills of the Albanian Alps on the banks of Buna, Drin and Kir. 
+Shkodër is regarded as the traditional capital of northern Albania, also referred to as Gegëria, and is noted for its arts, culture, religious diversity and turbulent history among the Albanians. The architecture of Shkodër is particularly dominated by mosques and churches reflecting the city's high degree of religious diversity and tolerance. Shkodër was home to many influential personalities, who among others, helped to shape the Albanian Renaissance.
+Popular artisan products: carpets, handmade bags and carpets. </i><br>  </p><br>
+
+       <h5><strong> Gjirokastra </strong></h5>
+      <a href = "gjitokaster.html"> <img src="gjirokaster.png" width="200px"> </a>
+      <p style="text-align:left;" class="w3-text-black" ><i>Gjirokastër is a city in the Republic of Albania and the seat of Gjirokastër County and Gjirokastër Municipality. It is located in a valley between the Gjerë mountains and the Drino, at 300 metres above sea level. Its old town is a UNESCO World Heritage Site, described as "a rare example of a well-preserved Ottoman town, built by farmers of large estate". The city is overlooked by Gjirokastër Fortress, where the Gjirokastër National Folklore Festival is held every five years. 
+Along with Muslim and Orthodox Albanians, the city is also home to a substantial Greek minority along with a considerable Aromanian community. Together with Sarandë, the city is considered one of the centers of the Greek minority in Albania, and there is a consulate of Greece.
+Popular artisan products: carpets, jewelry, handmade clothing.</i><br>  </p><br>
+    
+      
+    </div>
+
+    
+    </div>  
+    
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="order" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="background-color:#532a0f">ORDER </span></h1>
+    <p>Get anything you love now.</p>
+    
+    <p><span class="w3-tag">FYI!</span> <i>Pay with the world’s most popular and secure payment methods.</i></p>
+    <p><strong>Order</strong> a product or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="First name" required name="first name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="Last name" required name="last name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="Phone number" required name="number"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="Email" required name="email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="Credit card number" required name="number"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number1" placeholder="Address" required name="address"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit" style="background-color:#532a0f">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
